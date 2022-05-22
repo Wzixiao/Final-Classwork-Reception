@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from "../views/index.vue"
+
+const Index = () => import(/* webpackChunkName: "index" */ '../views/index.vue')
 
 const routes = [
   {
